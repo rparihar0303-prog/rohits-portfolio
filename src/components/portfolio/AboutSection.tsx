@@ -6,7 +6,7 @@ const skills = [
   { name: 'CSS3', level: 70 },
   {name: 'C++', level:80},
   {name: 'Python', level:50},
-  { name: 'JavaScript (ES6+)', level: 45 },
+  // { name: 'JavaScript (ES6+)', level: 45 },
   { name: 'Git & GitHub (Basics)', level: 70 },
 ];
 
@@ -19,7 +19,7 @@ const features = [
   },
   {
     icon: Palette,
-    title: 'Modern Design',
+    title: 'Modern Ideas',
     description: 'Creating beautiful interfaces with attention to detail.',
   },
   {
@@ -48,7 +48,7 @@ export const AboutSection = () => {
           {/* About Text */}
           <div className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a passionate Full Stack Developer and Website Designer, focused on building fast, scalable, and visually engaging web solutions. With over 1 year of experience in the tech industry, I’ve worked with startups and businesses to transform ideas into powerful digital products that users love.
+              I'm a passionate Full Stack Developer and Website Developer, focused on building fast, scalable, and visually engaging web solutions. With over 1 year of experience in the tech industry, I’ve worked with startups and businesses to transform ideas into powerful digital products that users love.
 
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">

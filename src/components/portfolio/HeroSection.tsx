@@ -27,7 +27,7 @@ export const HeroSection = () => {
           </h2>
 
           <p className="text-muted-foreground max-w-lg mx-auto lg:mx-0 mb-8 leading-relaxed">
-            I build powerful, scalable, and user-friendly web applications as a Full Stack Developer and Website Designer. With 1+ years of experience, I turn ideas into high-performance digital products using clean code and modern design.
+            I build powerful, scalable, and user-friendly web applications as a Full Stack Developer and Website Developer. With 1+ years of experience, I turn ideas into high-performance digital products using clean code and modern design.
           </p>
 
           {/* CTA Buttons */}
