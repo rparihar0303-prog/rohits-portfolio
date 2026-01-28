@@ -8,8 +8,8 @@ const About = () => {
     <>
       <SEOHead 
         title="About Me"
-        description="Learn more about John Doe, a Full Stack Developer and UI/UX Designer with expertise in React, TypeScript, and modern web technologies."
-        keywords="about john doe, developer background, skills, experience"
+        description="Learn more about Rohti Parihar, a Full Stack Developer and UI/UX Designer with expertise in React, TypeScript, and modern web technologies."
+        keywords="about rohit parihar, developer background, skills, experience"
       />
       <div className="min-h-screen bg-background">
         <PortfolioNavbar />

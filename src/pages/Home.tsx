@@ -10,8 +10,8 @@ const Home = () => {
   return (
     <>
       <SEOHead 
-        title="John Doe - Full Stack Developer & Designer"
-        description="Portfolio of John Doe, a passionate Full Stack Developer and UI/UX Designer with 5+ years of experience building beautiful digital products."
+        title="Rohit Parihar - Full Stack Developer & Designer"
+        description="Portfolio of Rohit Parihar, a passionate Full Stack Developer and UI/UX Designer with 5+ years of experience building beautiful digital products."
         keywords="portfolio, full stack developer, ui/ux designer, react developer, web developer, frontend developer"
       />
       <div className="min-h-screen bg-background">

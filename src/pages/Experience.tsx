@@ -8,7 +8,7 @@ const Experience = () => {
     <>
       <SEOHead 
         title="Experience"
-        description="Explore John Doe's professional journey - 5+ years of experience in full stack development, from startups to enterprise companies."
+        description="Explore Rohti Parihar's professional journey - 5+ years of experience in full stack development, from startups to enterprise companies."
         keywords="work experience, career, software development, job history"
       />
       <div className="min-h-screen bg-background">

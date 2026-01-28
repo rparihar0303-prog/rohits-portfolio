@@ -8,7 +8,7 @@ const Portfolio = () => {
     <>
       <SEOHead 
         title="Portfolio"
-        description="View John Doe's portfolio of web applications, mobile apps, and UI/UX design projects. 50+ successful projects completed."
+        description="View Rohti Parihar's portfolio of web applications, mobile apps, and UI/UX design projects. 50+ successful projects completed."
         keywords="portfolio, projects, web development, mobile apps, ui/ux design"
       />
       <div className="min-h-screen bg-background">
