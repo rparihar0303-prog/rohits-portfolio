@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Portfolio Design System - Black & Yellow Theme */
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 60 9% 98%;
+
+    --card: 0 0% 5%;
+    --card-foreground: 60 9% 98%;
+
+    --popover: 0 0% 5%;
+    --popover-foreground: 60 9% 98%;
+
+    --primary: 50 100% 50%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 60 9% 98%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 50 100% 50%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 50 100% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 3%;
+    --sidebar-foreground: 60 9% 98%;
+    --sidebar-primary: 50 100% 50%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 60 9% 98%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 50 100% 50%;
+
+    /* Custom Portfolio Colors */
+    --yellow-glow: 50 100% 50%;
+    --yellow-dim: 50 80% 40%;
+    --dark-surface: 0 0% 8%;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 60 9% 98%;
+
+    --card: 0 0% 5%;
+    --card-foreground: 60 9% 98%;
+
+    --popover: 0 0% 5%;
+    --popover-foreground: 60 9% 98%;
+
+    --primary: 50 100% 50%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 60 9% 98%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 50 100% 50%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 60 9% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 50 100% 50%;
+
+    --sidebar-background: 0 0% 3%;
+    --sidebar-foreground: 60 9% 98%;
+    --sidebar-primary: 50 100% 50%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 60 9% 98%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 50 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-primary text-primary-foreground;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-yellow-300 bg-clip-text text-transparent;
+  }
+
+  .glow-yellow {
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.3),
+                0 0 40px hsl(var(--primary) / 0.2),
+                0 0 60px hsl(var(--primary) / 0.1);
+  }
+
+  .border-glow {
+    @apply border border-primary/30;
+    box-shadow: 0 0 15px hsl(var(--primary) / 0.15);
+  }
+
+  .hover-glow {
+    @apply transition-all duration-300;
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 25px hsl(var(--primary) / 0.4);
+  }
+}
