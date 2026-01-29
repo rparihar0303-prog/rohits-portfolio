@@ -23,7 +23,7 @@ export const Footer = () => {
             </Link>
             <p className="text-muted-foreground text-sm mt-2">
               <p className="text-muted-foreground">
-                Building modern websites and scalable digital solutions.
+                Building modern websites and scalable digital solutions for startups and businesses.
               </p>
             </p>
           </div>
@@ -50,7 +50,7 @@ export const Footer = () => {
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground flex items-center justify-center gap-1">
-            © {new Date().getFullYear()} Rohit Parihar. Made with
+            © {new Date().getFullYear()}  Nexfolia. Built for Rohit Parihar.
             <Heart size={14} className="text-primary fill-primary" />
             All rights reserved.
           </p>
