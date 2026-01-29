@@ -50,9 +50,8 @@ export const Footer = () => {
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground flex items-center justify-center gap-1">
-            © {new Date().getFullYear()}  Nexfolia. Built for Rohit Parihar.
-            <Heart size={14} className="text-primary fill-primary" />
-            All rights reserved.
+            © {new Date().getFullYear()}  Nexfolia. Built for Rohit Parihar.All rights reserved.
+            {/* <Heart size={14} className="text-primary fill-primary" /> */}
           </p>
         </div>
       </div>
