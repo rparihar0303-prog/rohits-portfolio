@@ -24,7 +24,7 @@ const education = [
   {
     degree: 'B.Tech in Computer Science Engineering',
     school: 'Acropolis Institute of Technology & Research, Indore',
-    period: '2024 - 2028 (Currently in 2nd Year)',
+    period: '2024 - 2028 (Currently in 3rd Year)',
     description:
       'Studying core subjects including programming, data structures, and web technologies. Actively participating in practical labs and self-learning.',
   },
