@@ -3,11 +3,11 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const workExperience = [
   {
-    title: 'Co-Founder & CTO',
-    company: 'Nexfolia',
-    period: '2025 - Present',
+    title: 'Full Stack Developer',
+    company: 'Independent Projects',
+    period: '2024 - Present',
     description:
-      'Building modern websites and web applications for clients. Designing responsive UI, managing deployments, and learning full-stack development through real projects.',
+      'Building responsive web experiences, practicing modern frontend architecture, and working on full-stack concepts through real projects and portfolio development.',
     skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Git'],
   },
   {
@@ -152,6 +152,17 @@ export const ExperienceSection = () => {
                     </p>
                     <p className="text-sm text-muted-foreground">
                       NPTEL (National Programme on Technology Enhanced Learning)
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-card border-border">
+                  <CardContent className="p-4">
+                    <p className="font-medium text-foreground">
+                      AI/ML for Geodata Analytics
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      Indian Institute of Remote Sensing (IIRS), ISRO • Online Course / Certificate of Participation • 03 August 2026 – 14 August 2026 • 10 hours
                     </p>
                   </CardContent>
                 </Card>

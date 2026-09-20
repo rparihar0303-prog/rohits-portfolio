@@ -7,9 +7,9 @@ const Contact = () => {
   return (
     <>
       <SEOHead 
-        title="Contact"
-        description="Get in touch with Rohti Parihar for freelance work, job opportunities, or project collaborations. Available for new projects!"
-        keywords="contact, hire developer, freelance, get in touch"
+        title="Contact Rohit Parihar"
+        description="Get in touch with Rohit Parihar for web development projects, collaboration opportunities, and professional discussions."
+        keywords="contact Rohit Parihar, hire full stack developer, web development, project inquiry"
       />
       <div className="min-h-screen bg-background">
         <PortfolioNavbar />

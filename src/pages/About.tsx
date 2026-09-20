@@ -7,9 +7,9 @@ const About = () => {
   return (
     <>
       <SEOHead 
-        title="About Me"
-        description="Learn more about Rohti Parihar, a Full Stack Developer and UI/UX Designer with expertise in React, TypeScript, and modern web technologies."
-        keywords="about rohit parihar, developer background, skills, experience"
+        title="About Rohit Parihar"
+        description="Learn more about Rohit Parihar, a Full Stack Developer focused on responsive design, modern web applications, and practical software engineering."
+        keywords="about Rohit Parihar, full stack developer, web developer, React, TypeScript"
       />
       <div className="min-h-screen bg-background">
         <PortfolioNavbar />

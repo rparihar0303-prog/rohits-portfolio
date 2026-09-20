@@ -73,8 +73,11 @@ export const PortfolioNavbar = () => {
 
           {/* Mobile Menu Button */}
           <button
+            type="button"
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-foreground"
+            className="md:hidden p-2 text-foreground rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+            aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            aria-expanded={isOpen}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -103,8 +106,8 @@ export const PortfolioNavbar = () => {
                 {link.name}
               </Link>
             ))}
-            <Button className="mx-4 bg-primary text-primary-foreground hover:bg-primary/90">
-              Hire Me
+            <Button className="mx-4 bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+              <Link to="/contact">Hire Me</Link>
             </Button>
           </div>
         </div>

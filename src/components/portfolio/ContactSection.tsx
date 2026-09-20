@@ -8,6 +8,10 @@ import { SocialLinks } from './SocialLinks';
 import { useToast } from '@/hooks/use-toast';
 import emailjs from 'emailjs-com';
 
+const emailJsServiceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const emailJsTemplateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const emailJsPublicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
 const contactInfo = [
   { icon: Mail, label: 'Email', value: 'r.parihar0303@gmail.com', href: 'mailto:r.parihar0303@gmail.com' },
   { icon: Phone, label: 'Phone', value: '+91 8871785707', href: 'tel:+918871785707' },
@@ -19,34 +23,58 @@ export const ContactSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
-  // ✅ EMAILJS SUBMIT HANDLER
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
+    if (!emailJsServiceId || !emailJsTemplateId || !emailJsPublicKey) {
+      toast({
+        title: "Email service not configured",
+        description: "Add VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, and VITE_EMAILJS_PUBLIC_KEY to your .env file before sending messages.",
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
-      await emailjs.send(
-        "service_yaejytg",     // 🔁 replace from EmailJS dashboard
-        "template_8290tog",    // 🔁 replace from EmailJS dashboard
-        formData,
-        "eZSJR3WOt2rOp-Ebj"      // 🔁 replace from EmailJS dashboard
+      emailjs.init({ publicKey: emailJsPublicKey });
+
+      const response = await emailjs.send(
+        emailJsServiceId,
+        emailJsTemplateId,
+        {
+          from_name: formData.name,
+          reply_to: formData.email,
+          user_email: formData.email,
+          message: formData.message,
+        },
+        emailJsPublicKey
       );
+
+      if (response.status !== 200) {
+        throw new Error(`EmailJS returned status ${response.status}`);
+      }
 
       toast({
         title: "Message Sent!",
-        description: "Thanks for contacting Nexfolia. We'll reach out shortly.",
+        description: "Thanks for reaching out. I'll get back to you soon.",
       });
 
       setFormData({ name: "", email: "", message: "" });
-
     } catch (error) {
-      toast({
-        title: "Error",
-        description: "Failed to send message. Please try again.",
-      });
-    }
+      console.error('Contact form email submission failed:', error);
+      const errorText =
+        typeof error === 'object' && error && 'text' in error
+          ? String((error as { text?: string }).text)
+          : 'Please check your EmailJS configuration and try again.';
 
-    setIsSubmitting(false);
+      toast({
+        title: "Email could not be sent",
+        description: errorText || 'Please check your EmailJS configuration and try again.',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -70,10 +98,9 @@ export const ContactSection = () => {
             <div>
               <h3 className="text-2xl font-semibold text-foreground mb-4">Let's Talk</h3>
               <p className="text-muted-foreground leading-relaxed">
-                We help businesses and startups build modern websites, scalable web applications,
-                and high-performing digital solutions. If you’re planning a new project, need a
-                website upgrade, or want to grow your online presence — let’s connect and bring your
-                ideas to life.
+                I build modern websites, responsive interfaces, and practical digital solutions for
+                personal projects and collaborative work. If you’re planning a new idea, need a
+                website upgrade, or want to connect about development work — let’s start a conversation.
               </p>
             </div>
 

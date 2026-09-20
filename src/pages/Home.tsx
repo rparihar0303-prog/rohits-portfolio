@@ -10,9 +10,9 @@ const Home = () => {
   return (
     <>
       <SEOHead 
-        title="Rohit Parihar - Full Stack Developer & Designer"
-        description="Portfolio of Rohit Parihar, a passionate Full Stack Developer and UI/UX Designer with 5+ years of experience building beautiful digital products."
-        keywords="portfolio, full stack developer, ui/ux designer, react developer, web developer, frontend developer"
+        title="Rohit Parihar | Full Stack Developer"
+        description="Portfolio of Rohit Parihar, a Full Stack Developer focused on creating responsive, user-friendly web experiences with React, TypeScript, and modern UI design."
+        keywords="Rohit Parihar, full stack developer, React developer, TypeScript, web developer, portfolio"
       />
       <div className="min-h-screen bg-background">
         <PortfolioNavbar />

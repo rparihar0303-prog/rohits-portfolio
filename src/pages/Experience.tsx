@@ -7,9 +7,9 @@ const Experience = () => {
   return (
     <>
       <SEOHead 
-        title="Experience"
-        description="Explore Rohti Parihar's professional journey - 5+ years of experience in full stack development, from startups to enterprise companies."
-        keywords="work experience, career, software development, job history"
+        title="Rohit Parihar | Experience"
+        description="Explore Rohit Parihar's journey as a Full Stack Developer, including hands-on work in frontend development, UI/UX thinking, and modern web technologies."
+        keywords="Rohit Parihar experience, full stack developer, web development, UI/UX, React"
       />
       <div className="min-h-screen bg-background">
         <PortfolioNavbar />

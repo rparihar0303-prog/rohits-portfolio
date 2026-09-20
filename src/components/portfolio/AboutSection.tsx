@@ -2,12 +2,14 @@ import { Code, Palette, Rocket, Users } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const skills = [
-  { name: 'HTML5', level: 75 },
-  { name: 'CSS3', level: 70 },
-  {name: 'C++', level:80},
-  {name: 'Python', level:50},
-  // { name: 'JavaScript (ES6+)', level: 45 },
-  { name: 'Git & GitHub (Basics)', level: 70 },
+  { name: 'HTML5', level: 85 },
+  { name: 'CSS3', level: 82 },
+  { name: 'JavaScript', level: 80 },
+  { name: 'React', level: 80 },
+  { name: 'Tailwind CSS', level: 78 },
+  { name: 'Git & GitHub', level: 75 },
+  { name: 'Node.js Basics', level: 60 },
+  { name: 'Python', level: 55 },
 ];
 
 
@@ -56,14 +58,14 @@ export const AboutSection = () => {
 
             </p>
 
-            {/* Company Info */}
+            {/* Focus Info */}
             <Card className="bg-card border-border mt-8">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold text-foreground mb-4">
-                  Currently at <span className="text-primary">Nexfolia.</span>
+                  Currently focused on <span className="text-primary">Full Stack Development.</span>
                 </h3>
                 <p className="text-muted-foreground">
-                  Co-Founder & CTO at Nexfolia, leading fullstack developer and product architecture to build scalable, high-performance digital solutions. Passionate about innovation, clean engineering, and creating impactful user experiences.
+                  Building responsive web experiences, improving my frontend and backend skills, and creating practical projects with React, TypeScript, and modern UI/UX principles.
                 </p>
               </CardContent>
             </Card>
@@ -112,8 +114,8 @@ export const AboutSection = () => {
                 <p className="text-sm text-muted-foreground">Projects Done</p>
               </Card>
               <Card className="bg-card border-border text-center p-6">
-                <p className="text-3xl font-bold text-primary">---</p>
-                <p className="text-sm text-muted-foreground">Happy Clients</p>
+                <p className="text-3xl font-bold text-primary">3rd</p>
+                <p className="text-sm text-muted-foreground">Year of B.Tech</p>
               </Card>
             </div>
           </div>

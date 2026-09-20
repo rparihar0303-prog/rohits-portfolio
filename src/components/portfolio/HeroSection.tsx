@@ -27,11 +27,10 @@ export const HeroSection = () => {
           </h2>
 
           <p className="text-muted-foreground max-w-lg mx-auto lg:mx-0 mb-8 leading-relaxed">
-            I build powerful, scalable, and user-friendly web applications as a Full Stack Developer and Website Developer. With 1+ years of experience, I turn ideas into high-performance digital products using clean code and modern design.
+            I design and build responsive web experiences with React, TypeScript, and modern UI principles, focused on usability, performance, and clean full-stack development.
           </p>
 
-          {/* CTA Buttons */}
-          {/* <div className="flex flex-wrap gap-4 justify-center lg:justify-start mb-8">
+          <div className="flex flex-wrap gap-4 justify-center lg:justify-start mb-8">
             <Button 
               size="lg" 
               className="bg-primary text-primary-foreground hover:bg-primary/90 hover-glow gap-2"
@@ -46,11 +45,14 @@ export const HeroSection = () => {
               size="lg" 
               variant="outline" 
               className="border-primary/50 text-foreground hover:bg-primary/10 gap-2"
+              asChild
             >
-              <Download size={18} />
-              Download CV
+              <Link to="/portfolio">
+                <ArrowDown size={18} />
+                View Projects
+              </Link>
             </Button>
-          </div> */}
+          </div>
 
           {/* Social Links */}
           <SocialLinks />

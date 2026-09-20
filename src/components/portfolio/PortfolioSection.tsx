@@ -8,18 +8,18 @@ const categories = ['All', 'Web Apps', 'Mobile', 'UI/UX', 'Open Source'];
 
 const projects = [
   {
-    title: "Portfolio Website",
-    description: "Personal responsive portfolio built using React and Tailwind CSS.",
+    title: "Personal Portfolio",
+    description: "A responsive portfolio experience built with React, TypeScript, and Tailwind CSS to present my work, skills, and contact information clearly.",
     category: "Web",
   },
   {
-    title: "React Practice App",
-    description: "Small projects to practice React concepts and components.",
-    category: "Web",
+    title: "React UI Practice",
+    description: "A series of frontend experiments focused on reusable components, responsive layouts, and clean user interfaces.",
+    category: "UI/UX",
   },
   {
-    title: "College Mini Project",
-    description: "Academic project developed as part of coursework.",
+    title: "College Web Project",
+    description: "An academic project centred on building a practical web interface with structured layout, user flow, and modern styling decisions.",
     category: "Web",
   }
 ];
